@@ -1,0 +1,22 @@
+<?php
+
+namespace {{ namespace }};
+
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Artisan;
+
+class {{ class }} extends Command
+{
+    protected $signature = 'module:migrate-fresh';
+
+    protected $description = 'Reset all database tables and re-run the modules migrations';
+
+    public function handle()
+    {
+        $this->info('Resetting database...');
+        Artisan::call('migrate:fresh', [], $this->getOutput());
+        $this->info('Running module migrations...');
+        Artisan::call('module:migrate', [], $this->getOutput());
+        $this->info(' All modules migrated fresh!');
+    }
+}

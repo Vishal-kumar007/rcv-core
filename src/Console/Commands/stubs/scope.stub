@@ -1,0 +1,15 @@
+<?php
+
+namespace Modules\{{ module_name }}\Scopes;
+
+use Illuminate\Database\Eloquent\Scope;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+
+class {{ class_name }} implements Scope
+{
+    public function apply(Builder $builder, Model $model)
+    {
+        // Scope logic here
+    }
+}

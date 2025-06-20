@@ -1,0 +1,42 @@
+{
+    "name": "$LOWER_NAME$",
+    "description": "$STUDLY_NAME$ module for the application",
+    "type": "laravel-module",
+    "version": "1.0.0",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "$MODULE_NAMESPACE$": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "$MODULE_NAMESPACE$\\Providers\\$STUDLY_NAME$ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your@email.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/your-repo/issues",
+        "source": "https://github.com/your-repo"
+    },
+    "keywords": [
+        "laravel",
+        "module",
+        "$LOWER_NAME$"
+    ],
+    "license": "MIT"
+} 

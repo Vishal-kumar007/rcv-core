@@ -1,0 +1,19 @@
+<?php
+
+namespace Modules\{{ module_name }}\View\Components;
+
+
+use Illuminate\View\Component;
+
+class {{ class_name }} extends Component
+{
+    public function __construct()
+    {
+        //
+    }
+
+    public function render()
+    {
+        return view('');
+    }
+}

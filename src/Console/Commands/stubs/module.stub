@@ -1,0 +1,22 @@
+{
+    "name": "modules/{{ module_name_lower }}",
+    "description": "{{ module_name }} module for the application",
+    "type": "laravel-module",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Modules\\{{ module_name }}\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\{{ module_name }}\\Providers\\{{ module_name }}ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "modules/core": "*"
+    }
+} 

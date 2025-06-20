@@ -1,0 +1,25 @@
+<?php
+
+namespace Modules\{{ module_name }}\Database\Factories;
+
+use Illuminate\Database\Eloquent\Factories\Factory;
+use {{ model_namespace }};
+
+class {{ class_name }}Factory extends Factory
+{
+    protected $model = {{ class_name }}::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            // Example fields
+            // 'name' => $this->faker->name(),
+            // 'email' => $this->faker->unique()->safeEmail(),
+        ];
+    }
+}

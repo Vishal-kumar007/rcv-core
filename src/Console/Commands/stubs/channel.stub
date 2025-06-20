@@ -1,0 +1,20 @@
+<?php
+
+namespace Modules\{{module}}\Channels;
+
+use Illuminate\Notifications\Notification;
+
+class {{class}}
+{
+    /**
+     * Send the given notification.
+     *
+     * @param  mixed  $notifiable
+     * @param  \Illuminate\Notifications\Notification  $notification
+     * @return void
+     */
+    public function send($notifiable, Notification $notification)
+    {
+        // Send notification via custom channel
+    }
+}
