@@ -19,4 +19,8 @@ return new class extends Migration
             $table->dropColumn('{{ column }}');
         });
     }
+<<<<<<< HEAD
+}
+=======
 };
+>>>>>>> b9a8d6e819d738a495ed5da231b6353131a55c20

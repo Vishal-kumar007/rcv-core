@@ -33,7 +33,6 @@ use Rcv\Core\Console\Commands\ModuleAutoloadCommand;
 use Rcv\Core\Console\Commands\UpdatePhpunitCoverage;
 use Rcv\Core\Console\Commands\Make\MakeComponentView;
 use Rcv\Core\Console\Commands\Make\MakeModuleRequest;
-use Rcv\Core\Console\Commands\Make\ModuleAllCommands;
 use Rcv\Core\Console\Commands\Make\ModuleMakeCommand;
 use Rcv\Core\Console\Commands\Make\MakeModuleObserver;
 use Rcv\Core\Console\Commands\Make\ModuleMakeListener;
@@ -55,13 +54,9 @@ use Rcv\Core\Console\Commands\Make\ModuleMakeHelperCommand;
 use Rcv\Core\Console\Commands\Make\ModuleMiddlewareCommand;
 use Rcv\Core\Console\Commands\Make\MakeModuleArtisanCommand;
 use Rcv\Core\Console\Commands\Make\ModuleServiceMakeCommand;
-use Rcv\Core\Console\Commands\Make\MultiModuleEnableCommand;
-use Rcv\Core\Console\Commands\Make\MultiModuleRemoveCommand;
 use Rcv\Core\Console\Commands\Actions\ModuleCheckLangCommand;
 use Rcv\Core\Console\Commands\Actions\ModuleShowModelCommand;
-use Rcv\Core\Console\Commands\Make\ModuleMakeMultipleCommand;
 use Rcv\Core\Console\Commands\Make\ModuleResourceMakeCommand;
-use Rcv\Core\Console\Commands\Make\MultiModuleDisableCommand;
 use Rcv\Core\Console\Commands\Publish\ModulePublishMigration;
 use Rcv\Core\Console\Commands\Make\ModuleEventProviderCommand;
 use Rcv\Core\Console\Commands\Make\ModuleMakeExceptionCommand;
@@ -75,7 +70,6 @@ use Rcv\Core\Console\Commands\Database\Seeders\MakeModuleSeeder;
 use Rcv\Core\Console\Commands\Database\Migrations\MigrateRefresh;
 // use Rcv\Core\Console\Commands\Database\Migrations\ModuleMigrateCommand;
 use Rcv\Core\Console\Commands\Database\Seeders\ModuleSeedCommand;
-use Rcv\Core\Console\Commands\Make\MultiModuleMarketplaceCommand;
 use Rcv\Core\Console\Commands\Publish\ModulePublishAssetsCommand;
 use Rcv\Core\Console\Commands\Make\ModuleRouteProviderMakeCommand;
 use Rcv\Core\Console\Commands\Database\Factories\MakeModuleFactory;
@@ -151,12 +145,6 @@ class CoreServiceProvider extends ServiceProvider
         \Rcv\Core\Console\Commands\Make\MakeAction::class,
         \Rcv\Core\Console\Commands\Make\MakeInterfaceCommand::class,
         \Rcv\Core\Console\Commands\Make\ModuleMiddlewareCommand::class,
-        \Rcv\Core\Console\Commands\Make\MultiModuleRemoveCommand::class,
-        \Rcv\Core\Console\Commands\Make\ModuleAllCommands::class,
-        \Rcv\Core\Console\Commands\Make\ModuleMakeMultipleCommand::class,
-        \Rcv\Core\Console\Commands\Make\MultiModuleDisableCommand::class,
-        \Rcv\Core\Console\Commands\Make\MultiModuleEnableCommand::class,
-        \Rcv\Core\Console\Commands\Make\MultiModuleMarketplaceCommand::class,
 
         // Database Commands
         \Rcv\Core\Console\Commands\Database\Factories\MakeModuleFactory::class,
