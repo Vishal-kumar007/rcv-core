@@ -1,0 +1,11 @@
+<?php
+
+namespace Modules\{{module}}\Actions;
+
+class {{class}}
+{
+    public function handle($data)
+    {
+        // Your action logic here
+    }
+}

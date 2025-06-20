@@ -1,0 +1,65 @@
+<?php
+
+return [
+    /*
+    |--------------------------------------------------------------------------
+    | {{ module_name }} Module Configuration
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define all of the configuration settings for the {{ module_name }} module.
+    |
+    */
+
+    'name' => '{{ module_name }}',
+    'version' => '1.0.0',
+    'description' => '{{ module_name }} module for the application',
+    'author' => 'Your Name',
+    'email' => 'your.email@example.com',
+    'website' => 'https://example.com',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Settings
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define all of the settings for the {{ module_name }} module.
+    |
+    */
+
+    'settings' => [
+        'enabled' => true,
+        'debug' => false,
+        'cache' => true,
+        'cache_ttl' => 3600,
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Dependencies
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define all of the dependencies for the {{ module_name }} module.
+    |
+    */
+
+    'dependencies' => [
+        // 'Core',
+        // 'Auth',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Module Permissions
+    |--------------------------------------------------------------------------
+    |
+    | Here you may define all of the permissions for the {{ module_name }} module.
+    |
+    */
+
+    'permissions' => [
+        'view' => 'View {{ module_name }}',
+        'create' => 'Create {{ module_name }}',
+        'edit' => 'Edit {{ module_name }}',
+        'delete' => 'Delete {{ module_name }}',
+    ],
+]; 

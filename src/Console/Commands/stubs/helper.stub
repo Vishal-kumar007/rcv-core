@@ -1,0 +1,14 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ class }}
+{
+    /**
+     * Example static helper method.
+     */
+    public static function example()
+    {
+        return 'Hello from {{ class }}!';
+    }
+}

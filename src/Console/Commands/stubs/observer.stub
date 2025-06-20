@@ -1,0 +1,31 @@
+<?php
+
+namespace {{namespace}};
+
+class {{class}}
+{
+    public function created($model)
+    {
+        //
+    }
+
+    public function updated($model)
+    {
+        //
+    }
+
+    public function deleted($model)
+    {
+        //
+    }
+
+    public function restored($model)
+    {
+        //
+    }
+
+    public function forceDeleted($model)
+    {
+        //
+    }
+}

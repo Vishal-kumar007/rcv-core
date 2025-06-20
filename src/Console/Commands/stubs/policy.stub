@@ -1,0 +1,31 @@
+<?php
+
+namespace {{namespace}};
+
+use App\Models\User;
+use Illuminate\Auth\Access\HandlesAuthorization;
+
+class {{class}}
+{
+    use HandlesAuthorization;
+
+    public function view(User $user, $model)
+    {
+        //
+    }
+
+    public function create(User $user)
+    {
+        //
+    }
+
+    public function update(User $user, $model)
+    {
+        //
+    }
+
+    public function delete(User $user, $model)
+    {
+        //
+    }
+}

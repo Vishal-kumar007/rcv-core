@@ -1,0 +1,85 @@
+<?php
+
+namespace Modules\{{ module_name }}\Http\Controllers;
+
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+
+class {{ class_name }} extends Controller
+{
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  \App\Models\{{ resource_name }}  ${{ resource_name_lower }}
+     * @return \Illuminate\Http\Response
+     */
+    public function show({{ resource_name }} ${{ resource_name_lower }})
+    {
+        //
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  \App\Models\{{ resource_name }}  ${{ resource_name_lower }}
+     * @return \Illuminate\Http\Response
+     */
+    public function edit({{ resource_name }} ${{ resource_name_lower }})
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \App\Models\{{ resource_name }}  ${{ resource_name_lower }}
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, {{ resource_name }} ${{ resource_name_lower }})
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  \App\Models\{{ resource_name }}  ${{ resource_name_lower }}
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy({{ resource_name }} ${{ resource_name_lower }})
+    {
+        //
+    }
+} 
